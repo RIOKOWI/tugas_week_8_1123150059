@@ -239,8 +239,18 @@ class MyCard extends StatelessWidget {
                                 children: [
                                   Column(
                                     children: [
-                                      Text('1'),
-                                      Text('Followers'),
+                                      Text('1',
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                          color: Color.fromRGBO(255, 123, 0, 1),
+                                        ),
+                                      ),
+                                      Text('Followers',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          color: Color.fromRGBO(255, 123, 0, 1),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   SizedBox(
@@ -252,8 +262,18 @@ class MyCard extends StatelessWidget {
                                   ),
                                   Column(
                                     children: [
-                                      Text('1'),
-                                      Text('Followers'),
+                                      Text('1',
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                          color: Color.fromRGBO(255, 123, 0, 1),
+                                        ),
+                                      ),
+                                      Text('Followers',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          color: Color.fromRGBO(255, 123, 0, 1),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   SizedBox(
@@ -265,8 +285,18 @@ class MyCard extends StatelessWidget {
                                   ),
                                   Column(
                                     children: [
-                                      Text('1'),
-                                      Text('Followers'),
+                                      Text('1',
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                          color: Color.fromRGBO(255, 123, 0, 1),
+                                        ),
+                                      ),
+                                      Text('Followers',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          color: Color.fromRGBO(255, 123, 0, 1),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   SizedBox(
