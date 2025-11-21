@@ -382,6 +382,7 @@ class MyCard extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            SizedBox(height: 15,),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Text('1111  2222  4444  5555',
@@ -393,6 +394,7 @@ class MyCard extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            SizedBox(height: 15,),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Row(
