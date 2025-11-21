@@ -225,7 +225,7 @@ class MyCard extends StatelessWidget {
                                   'Learning Flutter',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     fontWeight: FontWeight.w400
                                   ),
                                 ),
@@ -243,6 +243,7 @@ class MyCard extends StatelessWidget {
                                         style: TextStyle(
                                           fontSize: 22,
                                           color: Color.fromRGBO(255, 123, 0, 1),
+                                          fontWeight: FontWeight.bold
                                         ),
                                       ),
                                       SizedBox(height: 5,),
@@ -263,13 +264,15 @@ class MyCard extends StatelessWidget {
                                   ),
                                   Column(
                                     children: [
-                                      Text('1',
+                                      Text('8 Weeks',
                                         style: TextStyle(
                                           fontSize: 22,
                                           color: Color.fromRGBO(255, 123, 0, 1),
+                                          fontWeight: FontWeight.bold
                                         ),
                                       ),
-                                      Text('Followers',
+                                      SizedBox(height: 5,),
+                                      Text('Experience',
                                         style: TextStyle(
                                           fontSize: 14,
                                           color: Color.fromRGBO(255, 123, 0, 1),
@@ -286,26 +289,21 @@ class MyCard extends StatelessWidget {
                                   ),
                                   Column(
                                     children: [
-                                      Text('1',
+                                      Text('50++',
                                         style: TextStyle(
                                           fontSize: 22,
                                           color: Color.fromRGBO(255, 123, 0, 1),
+                                          fontWeight: FontWeight.bold
                                         ),
                                       ),
-                                      Text('Followers',
+                                      SizedBox(height: 5,),
+                                      Text('Repository',
                                         style: TextStyle(
                                           fontSize: 14,
                                           color: Color.fromRGBO(255, 123, 0, 1),
                                         ),
                                       ),
                                     ],
-                                  ),
-                                  SizedBox(
-                                    height: 40,
-                                    child: VerticalDivider(
-                                      thickness: 1,
-                                      color: Color.fromRGBO(255, 123, 0, 1),
-                                    ),
                                   ),
                                 ],
                               ),
