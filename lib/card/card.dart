@@ -148,8 +148,7 @@ class MyCard extends StatelessWidget {
                       SizedBox(height: 15,),
                       Card(
                         elevation: 20,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          clipBehavior: Clip.antiAlias,
                           child: Container(
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
@@ -158,7 +157,7 @@ class MyCard extends StatelessWidget {
                             ),
                             child: Text('rio'),
                           ),
-                        ),
+                        
                       )
                     ],
                   ),
