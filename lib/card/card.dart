@@ -145,6 +145,21 @@ class MyCard extends StatelessWidget {
                           ),
                         ),
                       ),
+                      SizedBox(height: 15,),
+                      Card(
+                        elevation: 20,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                colors: [Colors.black, Colors.grey,]
+                                )
+                            ),
+                            child: Text('rio'),
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
