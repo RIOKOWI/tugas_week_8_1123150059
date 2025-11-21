@@ -113,6 +113,38 @@ class MyCard extends StatelessWidget {
                         child: Text("Custom border Radius Card", style: TextStyle(fontSize: 14.0)),
                         ),
                       ),
+                      SizedBox(height: 15,),
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 50, vertical: 50),
+                        child: Card(
+                          color: const Color.fromRGBO(204, 255, 0, 1),
+                          elevation: 10,
+                          child: Padding(
+                            padding: const EdgeInsets.all(20.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Tentang Saya",
+                                  textAlign: TextAlign.left,
+                                    style: TextStyle(
+                                      fontSize: 30.0,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color.fromRGBO(3, 61, 52 , 1)
+                                    ),
+                                  ),
+                                  SizedBox(height: 10,),
+                                  Text("Sekarang saya sedang konsisten untuk terus belajar dan mengerjakan coding setiap hari. Saya berusaha menjaga ritme ini supaya kemampuan saya semakin berkembang dari waktu ke waktu.",
+                                  textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                      fontSize: 15.0,
+                                      color: Color.fromRGBO(3, 61, 52 , 1)
+                                    ),
+                                  ),
+                                ],
+                              ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
