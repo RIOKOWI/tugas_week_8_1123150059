@@ -45,7 +45,6 @@ class MyCard extends StatelessWidget {
                       SizedBox(height: 15,),
                       Card(
                         color: Colors.red,
-                        margin: EdgeInsets.all(16.0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5)
                         ),
@@ -54,7 +53,22 @@ class MyCard extends StatelessWidget {
                         child: Text("Shape Bingkai persegi panjang", 
                           style: TextStyle(fontSize: 12.0)),
                         ),
-                      )
+                      ),
+                      Card(
+                        margin: EdgeInsets.all(16.0),
+                        child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Margin Card", style: TextStyle(fontSize: 10.0)),
+                        ),
+                      ),
+                      Card(
+                        shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16),
+                        side: BorderSide(color: Colors.red, width: 2),
+                        ),
+                        borderOnForeground: true, // false
+                        child: Text("Border tidak menimpa konten", style: TextStyle(fontSize: 10.0)),
+                      ),
                     ],
                   ),
                 ),
