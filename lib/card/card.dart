@@ -22,9 +22,9 @@ class MyCard extends StatelessWidget {
                         'Card 1',
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: 15,),
                     Text('Perbandingan Card dengan Container'),
-                    SizedBox(height: 5,),
+                    SizedBox(height: 15,),
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
@@ -39,6 +39,18 @@ class MyCard extends StatelessWidget {
                       ),
                       child: Text(
                         'Container 1',
+                      ),
+                    ),
+                    SizedBox(height: 15,),
+                    Card(
+                      color: Colors.red,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5)
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                      child: Text("Shape Bingkai persegi panjang", 
+                        style: TextStyle(fontSize: 12.0)),
                       ),
                     )
                   ],
