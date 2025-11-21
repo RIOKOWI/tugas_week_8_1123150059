@@ -354,6 +354,8 @@ class MyCard extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20,),
+
+                // CREDIT CARD
                 Card(
                   child: Column(
                     children: [
@@ -364,18 +366,30 @@ class MyCard extends StatelessWidget {
                           color: const Color.fromRGBO(204, 255, 0, 1),
                           borderRadius: BorderRadius.circular(15)
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Align(
-                            alignment: Alignment.topCenter,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Icon(Icons.credit_card, color: Colors.white70, size: 32),
-                                Icon(Icons.contactless, color: Colors.white54, size: 32),                   
-                              ],
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Align(
+                                alignment: Alignment.topCenter,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Icon(Icons.credit_card, color: Colors.white70, size: 32),
+                                    Icon(Icons.contactless, color: Colors.white54, size: 32),                   
+                                  ],
+                                ),
+                              ),
                             ),
-                          ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              child: Text('1111 2222 4444 5555',
+                                textAlign: TextAlign.start,
+                                
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ],
