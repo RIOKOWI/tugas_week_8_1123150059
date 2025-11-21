@@ -16,6 +16,7 @@ class MyCard extends StatelessWidget {
                 child: Column(
                   children: [
                     Card(
+                      elevation: 8,
                       color: Colors.red,
                       child: Text(
                         'Card 1',
