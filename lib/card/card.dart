@@ -323,24 +323,34 @@ class MyCard extends StatelessWidget {
                   color: Color.fromRGBO(29, 214, 95, 1),
                   elevation: 10,
                   margin: EdgeInsets.all(16),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ListTile(
-                        leading: Image.asset('assets/images/21savage.jpeg'),
-                        title: Text('A Lot',
-                          style: TextStyle(
-                            color: Colors.black,
+                  child: Container(
+                    height: 500,
+                    width: 500,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        ListTile(
+                          leading: Image.asset('assets/images/21savage.jpeg'),
+                          title: Text('A Lot',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                          subtitle: Text('21 Savage',
+                            style: TextStyle(
+                              color: Colors.black,            
+                            ),
                           ),
                         ),
-                        subtitle: Text('21 Savage',
-                          style: TextStyle(
-                            color: Colors.black,            
+                        Padding(
+                          padding: EdgeInsets.all(16.0),
+                          child: Text(
+                          'How much money you got? (A lot)\nHow many problems you got? (A lot)\nHow many people done doubted you? (A lot)\nLeft you out to rot? (A lot)\nHow many pray that you flop? (A lot)\nHow many lawyers you got? (A lot)\nHow many times you got shot? (A lot)\nHow many niggas you shot? (A lot)\nHow many times did you ride? (A lot)\nHow many niggas done died? (A lot)\nHow many times did you cheat? (A lot)\nHow many times did you lie? (A lot)\nHow many times did she leave? (A lot)\nHow many times did she cry? (A lot)\nHow many chances she done gave you fuckin around with these thots? (A lot)\n',
                           ),
                         ),
-                      ),
-                     
-                    ],
+                      ],
+                    ),
                   ),
                 )
               ],
