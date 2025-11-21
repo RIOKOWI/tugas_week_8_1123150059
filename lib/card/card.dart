@@ -86,7 +86,25 @@ class MyCard extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: Text("Semantic true", style: TextStyle(fontSize: 14.0)),
                         ),
-                      )
+                      ),
+                      SizedBox(height: 15,),
+                      Card(
+                        color: Colors.red,
+                        semanticContainer: false,
+                        child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Semantic False", style: TextStyle(fontSize: 14.0)),
+                        ),
+                      ),
+                      SizedBox(height: 15,),
+                      Card(
+                        shadowColor: Colors.red,
+                        child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("bcbebceuc", style: TextStyle(fontSize: 14.0)),
+                        ),
+                      ),
+                      SizedBox(height: 15,),
                     ],
                   ),
                 ),
