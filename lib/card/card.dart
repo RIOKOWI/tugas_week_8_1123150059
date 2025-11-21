@@ -160,28 +160,35 @@ class MyCard extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 Card(
-                  elevation: 20,
-                  
-                  clipBehavior: Clip.antiAlias,
+                  // clipBehavior: Clip.antiAlias,
                   child: Column(
                     children: [
                       Container(
-                        width: 300,
+                        height: 150,
+                        width: double.infinity,
                         decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
                           gradient: LinearGradient(
                             begin: Alignment.topRight,
                             end: Alignment.bottomLeft,
                             colors: [Colors.black, Colors.grey]
                           ),
+                          boxShadow: [
+                            BoxShadow(
+                              color:  Color.fromRGBO(255, 123, 0, 1),
+                              blurRadius: 10,
+                              offset: Offset(0, 5),
+                            ),
+                          ],
                         ),
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white, width: 5),
+                            border: Border.all(color: Color.fromRGBO(255, 123, 0, 1), width: 5),
                           ),
                           child: Center(
                             child: CircleAvatar(
-                              radius: 60,
+                              radius: 70,
                               backgroundColor: Colors.white,
                               foregroundImage: AssetImage('assets/images/cungpruy.jpg'),
                               
@@ -192,6 +199,7 @@ class MyCard extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(height: 20,)
               ],
             ),
           ),
