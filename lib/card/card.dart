@@ -210,7 +210,27 @@ class MyCard extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 30
                               ),
-                            )
+                            ),
+                            SizedBox(height: 10,),
+                            Container(
+                              height: 40,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                color: Color.fromRGBO(255, 123, 0, 1),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(9),
+                                child: Text(
+                                  'Learning Flutter',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w400
+                                  ),
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                         
