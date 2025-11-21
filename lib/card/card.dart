@@ -355,17 +355,27 @@ class MyCard extends StatelessWidget {
                 ),
                 SizedBox(height: 20,),
                 Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)
-                  ),
-                  clipBehavior: Clip.antiAlias,
-                  elevation: 20,
-                  child: Container(
-                    height: 220,
-                    width: 350,
-                    decoration: BoxDecoration(
-                      color: const Color.fromRGBO(204, 255, 0, 1),
-                    ),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 220,
+                        width: 350,
+                        decoration: BoxDecoration(
+                          color: const Color.fromRGBO(204, 255, 0, 1),
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Icon(Icons.credit_card, color: Colors.white70, size: 32),
+                              Icon(Icons.contactless, color: Colors.white54, size: 32),                   
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
 
