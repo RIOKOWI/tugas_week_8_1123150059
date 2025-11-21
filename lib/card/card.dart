@@ -166,6 +166,7 @@ class MyCard extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
+                        width: 300,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             begin: Alignment.topRight,
@@ -173,10 +174,19 @@ class MyCard extends StatelessWidget {
                             colors: [Colors.black, Colors.grey]
                           ),
                         ),
-                        child: CircleAvatar(
-                          radius: 60,
-                          backgroundColor: Colors.white,
-                          backgroundImage: AssetImage(''),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white, width: 5),
+                          ),
+                          child: Center(
+                            child: CircleAvatar(
+                              radius: 60,
+                              backgroundColor: Colors.white,
+                              foregroundImage: AssetImage('assets/images/cungpruy.jpg'),
+                              
+                            ),
+                          ),
                         ),
                       ),
                     ],
