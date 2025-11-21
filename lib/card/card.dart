@@ -22,7 +22,15 @@ class MyCard extends StatelessWidget {
                         
                       ),
                     ),
-                    
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.red,
+                      ),
+                      child: Text(
+                        'Container 1',
+                      ),
+                    )
                   ],
                 ),
               ),
